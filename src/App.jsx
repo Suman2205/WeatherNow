@@ -9,14 +9,6 @@ import WeatherApp from './WeatherApp';
 
 function App() {
   return (
-    // <>
-    //   <h1>Material UI Demo</h1>
-    //   <Button variant="contained">Click me!</Button>
-    // </>
-    // <>
-    //   <SearchBox/>
-    //   <InfoBox/>
-    // </>
     <>
       <WeatherApp/>
     </>
