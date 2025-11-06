@@ -6,6 +6,10 @@ import AcUnitIcon from '@mui/icons-material/AcUnit';
 import SunnyIcon from '@mui/icons-material/Sunny';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import './InfoBox.css';
+import Rainy from './assets/rainy.png';
+import Sunny from './assets/sunny.png';
+import Winter from './assets/winter.png';
+
 export default function InfoBox({info}){
     const INIT_URL="https://images.unsplash.com/photo-1708552592233-5934a64eaec0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
     const RAIN_URL="https://images.unsplash.com/photo-1507027682794-35e6c12ad5b4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
@@ -17,7 +21,7 @@ export default function InfoBox({info}){
                 <Card sx={{ maxWidth: 345 }}>
                     <CardMedia
                         sx={{ height: 140 }}
-                        image={info.humidity>80?RAIN_URL:info.temp>15?HOT_URL:COLD_URL}
+                        image={info.humidity>80?Rainy:info.temp>15?Sunny:Winter}
                         title="overcast clouds"
                     />
                     <CardContent>
